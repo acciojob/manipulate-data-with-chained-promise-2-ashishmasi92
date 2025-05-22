@@ -28,7 +28,7 @@ let multiple = data.map((v)=>{
 })
 
 		let div = document.querySelector("#output")
-		div.textContent = multiple.join("")
+		div.textContent = multiple.join(",")
 		resolve(multiple)
 		
 	},3000)
