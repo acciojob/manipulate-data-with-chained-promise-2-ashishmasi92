@@ -4,7 +4,7 @@ function chainPromise(){
 let p = new Promise((resolve,reject)=>{
 	setTimeout(()=>{
 		resolve([1,2,3,4])
-	},3000)
+	},0)
 })
 		p.then(res =>{
 	return new Promise((resolve,reject)=>{
@@ -17,7 +17,7 @@ let p = new Promise((resolve,reject)=>{
 		div.textContent = even.join("")
 	document.body.append(div)
 			resolve(even)
-		},1000)
+		},500)
 	})
 })
 .then(data=>{
@@ -31,7 +31,7 @@ let multiple = data.map((v)=>{
 		div.textContent = multiple.join(",")
 		resolve(multiple)
 		
-	},3000)
+	},2000)
 		
 	})
 })
