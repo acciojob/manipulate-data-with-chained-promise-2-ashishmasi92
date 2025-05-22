@@ -14,7 +14,7 @@ let p = new Promise((resolve,reject)=>{
 			})
 				let div = document.createElement("div")
 			div.id = "output"
-		div.textContent = even.join("")
+		div.textContent = even.join(",")
 	document.body.append(div)
 			resolve(even)
 		},500)
